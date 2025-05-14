@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Minimalist Dark Mode Directory</title>
+
+  <!-- Leaflet CSS for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#objectList" class="skip-link">Skip to content</a>
+
+  <header class="app-bar" role="banner" aria-label="Site Title">
+    DarkMode<span>Directory</span>
+  </header>
+
+  <main role="main">
+    <section class="controls" aria-label="Search and Filter Controls">
+      <div class="search-wrapper">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search by city or name..."
+          aria-label="Search objects by city or name"
+          autocomplete="off"
+          tabindex="1"
+        />
+        <button id="clearSearchBtn" aria-label="Clear search input" title="Clear search" tabindex="2"></button>
+      </div>
+      <select id="cityFilter" aria-label="Filter objects by city" tabindex="3">
+        <option value="">All Cities</option>
+      </select>
+      <div id="resultsCount" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    <section id="objectList" class="object-list" aria-live="polite" aria-label="List of objects">
+      <!-- Dynamically populated -->
+    </section>
+
+    <section id="ads" aria-label="Advertisement Spaces">
+      <h2>Advertisement</h2>
+      <div id="adSpace" tabindex="4" role="region" aria-live="polite">
+        <!-- Ads dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <div id="objectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" tabindex="-1">
+    <div class="modal-content" tabindex="0">
+      <button class="modal-close" id="closeModal" aria-label="Close details">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-info">
+        <p><strong>Address:</strong> <span id="modalAddress"></span></p>
+        <p><strong>Contact:</strong> <span id="modalContact"></span></p>
+      </div>
+      <div class="modal-photos" id="modalPhotos" tabindex="0" aria-label="Photo gallery"></div>
+      <div id="modalMap" aria-label="Location map"></div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- Leaflet JS for map -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "cities": ["გურჯაანი", "London", "Tokyo"],
+  "objects": [
+    {
+      "id": 1,
+      "name": "Central Park",
+      "city": "New York",
+      "description": "A large public park in New York City, offering scenic views and recreational activities.",
+      "address": "Central Park, NY, USA",
+      "contact": "info@centralparknyc.org",
+      "photos": [
+        "https://via.placeholder.com/400x200?text=Central+Park+1",
+        "https://via.placeholder.com/400x200?text=Central+Park+2"
+      ],
+      "coordinates": [40.785091, -73.968285]
+    },
+    {
+      "id": 2,
+      "name": "პაპაი ბაღი",
+      "city": "გურჯაანი",
+      "description": "Iconic bascule and suspension bridge in London over the River Thames.",
+      "address": "Tower Bridge Rd, London, UK",
+      "contact": "contact@towerbridge.co.uk",
+      "photos": [
+        "https://i.postimg.cc/nrVpMrZk/2.jpg","https://i.postimg.cc/pTJP2zNr/12.jpg","https://i.postimg.cc/G2Ccwz56/1.jpg","https://i.postimg.cc/rFFwwnwk/14.jpg"
+      ],
+      "coordinates": [41.748141,45.804770]
+    },
+    {
+      "id": 3,
+      "name": "Shinjuku Gyoen",
+      "city": "Tokyo",
+      "description": "A large park and garden in Shinjuku and Shibuya, Tokyo, known for its cherry blossoms.",
+      "address": "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan",
+      "contact": "info@shinjukugyoen.jp",
+      "photos": [
+        "https://via.placeholder.com/400x200?text=Shinjuku+Gyoen+1",
+        "https://via.placeholder.com/400x200?text=Shinjuku+Gyoen+2"
+      ],
+      "coordinates": [35.685175, 139.710052]
+    }
+  ],
+  "ads": [
+    {
+      "name": "Ad Space 1",
+      "image": "https://via.placeholder.com/320x100?text=Ad+Space+1",
+      "url": "https://example.com/ad1"
+    },
+    {
+      "name": "Ad Space 2",
+      "image": "https://via.placeholder.com/320x100?text=Ad+Space+2",
+      "url": "https://example.com/ad2"
+    }
+  ]
+}
